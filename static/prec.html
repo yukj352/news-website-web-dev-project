@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NewsArena</title>
+  <link rel="stylesheet" href="{{ url_for('static',filename='prac.css') }}">
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+      <ul class="navbar_list">
+        <li class="navbar_list_link"><a href="#" id="home">Home</a></li>
+        <li class="navbar_list_link"><a href="about.html" target="_blank">About</a></li>
+        <li class="navbar_list_link"><a>World</a></li>
+        <li class="navbar_list_link"><a>Business</a></li>
+        <li class="navbar_list_link"><a>Sports</a></li>
+        <li class="navbar_list_link"><a>Technology</a></li>
+        <li class="navbar_list_link"><a>Entertainment</a></li>
+        <li class="navbar_list_link"><a href="{{ url_for('login') }}" target="_blank" >Log in</a></li>
+        <li class="navbar_list_link"><a href="{{ url_for('register') }}" target="_blank" >Register</a></li>
+      </ul>
+    </nav>
+    <h1>News Arena</h1>
+    <div search-container>
+    <input type="text" placeholder="search news...." class="input-button" id="inputButton">
+    <button class="search-button" id="searchButton">search</button>
+  </div>
+</header>
+<div class="para">
+<img src="https://th.bing.com/th/id/OIP.T3bo4kRbwRuCOPOcVSw45QHaDz?rs=1&pid=ImgDetMain" alt="image">
+<p class="p1">Welcome to <span class="span">NewsArena</span>, your trusted source for breaking news, in-depth analysis, and the latest updates from around the world. Whether you're staying informed on politics, technology, sports, or entertainment, we bring you accurate and timely stories that matter most. Explore trending topics, dive into expert opinions, and never miss a moment with our real-time updates and personalized content. Stay informed, stay connected.</p>
+</div>
+<div class="grid" id="searchResults">
+  <!-- Your news cards will be populated here with JavaScript -->
+  </div>
+  <div class="footer">
+  <footer>
+    <div class="footer-container">
+      <p>&copy; 2025 NewsArena. All rights reserved.</p>
+      <ul class="social-media-list">
+        <li><a href="https://www.facebook.com" target="_blank">Facebook</a></li>
+        <li><a href="https://www.twitter.com" target="_blank">Twitter</a></li>
+        <li><a href="https://www.instagram.com" target="_blank">Instagram</a></li>
+        <li><a href="https://www.linkedin.com" target="_blank">LinkedIn</a></li>
+        <li><a href="https://www.youtube.com" target="_blank">YouTube</a></li>
+      </ul>
+    </div>
+  </footer>
+  <script src="{{ url_for('static', filename='index.js') }}"></script>
+</body>
+</html>

@@ -1,0 +1,271 @@
+/* General Body and Layout Styles */
+body {
+  background-color: black;
+  background-image: url("https://cdn.pixabay.com/photo/2022/05/13/10/35/flower-7193390_1280.jpg");
+  background-size: cover;
+  background-position: center;
+  color: white;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+header {
+  text-align: center;
+  padding: 20px;
+  background-color:#3E2723;
+  background-image: url("https://cdn.pixabay.com/photo/2016/12/15/20/17/color-1909977_1280.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  
+}
+
+h1 {
+  color: aliceblue;
+  font-weight: bolder;
+  font-style: italic;
+  font-size: 4em;
+  margin: 20px 0;
+  font-family:serif
+}
+
+.navbar {
+  background-color: rgba(255,255,255,0.5);
+  padding: 10px 0;
+  border-radius:12px;
+  width: auto;
+}
+
+.navbar_list {
+  display: flex;
+  justify-content: flex-end;
+  list-style-type: none;
+  padding: 0;
+}
+
+.navbar_list_link {
+  margin: 0 15px;
+}
+
+.navbar_list_link a {
+  color: black;
+  text-decoration: underline;
+  font-weight:bold;
+  padding:10px;
+  display:block;
+  border-radius:6px;
+}
+
+.navbar_list_link a:hover {
+  /* color: #FFCFCF; */
+  /* color: #ffdf00; */
+  /* background:  rgba(32,42,255,0.5); */
+  /* background:#CDC1FF; */
+  background:whitesmoke;
+}
+
+.search-container {
+  margin-top: 20px;
+}
+
+.input-button {
+  width: 30%;
+  padding: 12px;
+  border-radius: 10px;
+  background-color: beige;
+  border: 1px solid #ddd;
+}
+
+.search-button {
+  width: 10%;
+  padding: 12px;
+  border-radius: 10px;
+  background-color: beige;
+  border: 1px solid #ddd;
+  cursor: pointer;
+}
+
+.search-button:hover {
+  background-color: #444;
+  color: white;
+}
+
+/* News Article Card Styles */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 30px;
+  margin:20px 20px;
+  
+  
+}
+
+.card {
+  background-color: #fffafa;
+  border-radius: 10px;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+  padding: 15px;
+  color: grey;
+
+}
+.card:hover{
+  transform: translateY(-20px); /* Moves the element upward */
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.9); /* Adds a stronger shadow */
+}
+
+.card-img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.card-title {
+  font-size: 1.5em;
+  margin-top: 10px;
+}
+
+.card-description {
+  font-size: 1em;
+  margin-top: 10px;
+}
+
+.card a {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 10px 15px;
+  background-color: blueviolet;
+  color: white;
+  text-decoration: none;
+  border-radius: 6px;
+}
+
+.card a:hover {
+  background-color: darkviolet;
+}
+
+/* Pagination Styles */
+.pagination {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+  position: fixed;
+  bottom: 20px;
+  width: 100%;
+  justify-content: center;
+}
+
+.pagination button {
+  width: 100px;
+  padding: 10px 0;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  background-color: #444;
+  color: white;
+  cursor: pointer;
+  margin: 0 10px;
+  font-size: 14px;
+}
+
+.pagination button:hover {
+  background-color: #575757;
+}
+/* Paragraph Section */
+.para {
+  padding: 20px;
+  /* background-color: ; */
+  text-align: center;
+  font-size: 18px;
+  line-height: 1.6;
+  margin-top: 50px; 
+}
+.para img {
+  float :left;
+  margin: 40px;
+  
+  border-radius: 50px;
+ 
+}
+:root {
+  --dynamic-color-1: #efb9cb;
+  --dynamic-color-2: #ffa07a;
+  --dynamic-color-3: #87cefa;
+}
+
+@keyframes colorChange {
+  0% {
+    color: var(--dynamic-color-1);
+  }
+  33% {
+    color: var(--dynamic-color-2);
+  }
+  66% {
+    color: var(--dynamic-color-3);
+  }
+  100% {
+    color: var(--dynamic-color-1);
+  }
+}
+
+.p1 {
+  font-size: 1.2em;
+  animation: colorChange 5s infinite;
+  font-weight: bold;
+  width: auto;
+  text-align: left;
+}
+/* 
+.p1 {
+  font-size: 1.2em;
+  color: #EFB9CB;
+} */
+/* Footer Styles */
+
+footer {
+  background-color: #FFFFFF;
+  color: purple;
+  text-align: center;
+  padding: 20px 0;
+  margin-top: 20px;
+  border-top: 2px solid #444;
+}
+
+.footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+footer p {
+  margin: 0;
+  font-size: 1em;
+}
+
+.social-media-list {
+  list-style-type: none;
+  padding: 10px 0;
+  margin: 10px 0 0;
+  display: flex;
+  justify-content: center;
+  gap: 60px;
+}
+
+.social-media-list li {
+  display: block;
+  padding: 30px 0;
+  margin: 10px 0 0;
+}
+
+.social-media-list a {
+  color: black;
+  text-decoration: none;
+  font-size: 1.2em;
+  transition: color 0.3s ease;
+}
+
+.social-media-list a:hover {
+  color: goldenrod;
+}
