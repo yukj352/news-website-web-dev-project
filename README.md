@@ -28,4 +28,14 @@ prerequisites
 - pip (Python package Manager)
 ## Installation Steps
 1. Clone Repository:
+   https://github.com/yukj352/news-website-web-dev-project.git
+2. Install flask and the associated libraries available in app.py for running the projectin 
+   your local system.
+3. Set up the proper Database connection with the details provided in python code with proper 
+   attributes.
+4. on this successful setup run the python application (app.py) file.
+5. Open your browser and navigate to:
+   http://127.0.0.1:5000
 
+### Thanks to 
+NewsAPI.org -- for News getting newsapi
