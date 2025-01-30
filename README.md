@@ -22,4 +22,10 @@ Welcome to the News Arena , a News aggregator website! This project is a web app
 - MySQL Database
 ### Api Integration
 - Integrated with external API's to fetch real time news.
+### Setup Instructions
+prerequisites
+- Python 3.9
+- pip (Python package Manager)
+## Installation Steps
+1. Clone Repository:
 
