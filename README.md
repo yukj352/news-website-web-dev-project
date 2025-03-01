@@ -38,3 +38,6 @@ prerequisites
 
 ### Thanks to 
 NewsAPI.org -- for News getting newsapi
+
+
+Srenshot(1862.pdf) provides the basic lookup of the website.
