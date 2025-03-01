@@ -13,7 +13,6 @@ Welcome to the News Arena , a News aggregator website! This project is a web app
 ### Frontend
 - HTML
 - CSS
-- BOOTSTRAP
 - JAVASCRIPT
 ### Backend
 - Python
